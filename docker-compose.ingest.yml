@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  ingest:
+    build:
+      context: .
+      dockerfile: Dockerfile.ingest
+    volumes:
+      # Mount knowledge_base/ so the script reads .md files
+      # and writes faiss_index/ back to your local machine
+      - ./knowledge_base:/knowledge_base
+    environment:
+      EMBEDDING_MODEL: sentence-transformers/all-MiniLM-L6-v2
+    restart: "no"   # run once then exit

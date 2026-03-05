@@ -1,0 +1,14 @@
+{
+  "id": "log-002",
+  "timestamp": "2026-02-28T15:01:44Z",
+  "severity": "error",
+  "error_code": "UE_DATASET_NOT_FOUND",
+  "error_message": "UE dataset CSV file not found at expected path.",
+  "context": {
+    "request_id": "req-def456",
+    "session_id": "bdt-session-9b2c",
+    "ue_dataset_id": "dataset-missing-xyz",
+    "expected_path": "s3://netai-datasets/dataset-missing-xyz/ues.csv"
+  },
+  "stack_trace": "FileNotFoundError: ues.csv does not exist\n  at DataLoader.load_csv (data_sim/loader.py:57)"
+}

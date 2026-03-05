@@ -1,0 +1,16 @@
+{
+  "id": "log-003",
+  "timestamp": "2026-02-28T16:45:02Z",
+  "severity": "critical",
+  "error_code": "WORKER_OOM",
+  "error_message": "Simulation worker killed due to out-of-memory condition.",
+  "context": {
+    "request_id": "req-ghi789",
+    "session_id": "bdt-session-3d1e",
+    "worker_pid": 18432,
+    "memory_limit_mb": 2048,
+    "memory_used_mb": 2051,
+    "rapp_id": "cco"
+  },
+  "stack_trace": "OOMKilledException: Worker 18432 killed by OS (signal 9)\n  at ProcessMonitor.check_health (monitor.py:203)"
+}

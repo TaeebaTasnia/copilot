@@ -1,0 +1,15 @@
+{
+  "id": "log-001",
+  "timestamp": "2026-02-28T14:23:11Z",
+  "severity": "error",
+  "error_code": "BDT_TIMEOUT",
+  "error_message": "BDT session timed out after 300 seconds.",
+  "context": {
+    "request_id": "req-abc123",
+    "session_id": "bdt-session-7f3a",
+    "ue_dataset_id": "dataset-large-urban-50k",
+    "num_ues": 50000,
+    "elapsed_seconds": 300
+  },
+  "stack_trace": "TimeoutError: BDT engine worker did not respond\n  at BDTSession.run (bdt_engine/session.py:142)"
+}

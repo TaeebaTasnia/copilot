@@ -1,0 +1,72 @@
+services:
+
+  # MongoDB database — all error logs stored here
+  mongodb:
+    image: mongo:latest
+    container_name: netai-mongodb
+    ports:
+      - "27017:27017"  # MongoDB default port
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_DATABASE: netai_copilot
+    volumes:
+      - mongodb_data:/data/db
+      - ./scripts/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test -u admin -p password123 --authenticationDatabase admin
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  dummy-api:
+    build:
+      context: ./dummy-api
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./mock-logs:/mock-logs
+    environment:
+      MONGODB_URL: mongodb://admin:password123@mongodb:27017/netai_copilot?authSource=admin
+      MONGODB_HOST: mongodb
+      MONGODB_PORT: 27017
+      MONGODB_USER: admin
+      MONGODB_PASSWORD: password123
+      MONGODB_DATABASE: netai_copilot
+    depends_on:
+      mongodb:
+        condition: service_healthy
+
+  mcp-server:
+    build:
+      context: ./mcp-server
+    ports:
+      - "8002:8002"
+    environment:
+      DUMMY_API_URL: http://dummy-api:8001
+    depends_on:
+      - dummy-api
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount the pre-built FAISS index into the container
+      - ./knowledge_base/faiss_index:/app/knowledge_base/faiss_index
+    environment:
+      GROQ_API_KEY: ${GROQ_API_KEY}
+      GROQ_MODEL: ${GROQ_MODEL}
+      DUMMY_API_URL: http://dummy-api:8001
+      CHAT_API_URL: http://dummy-api:8001
+      MCP_SERVER_URL: http://mcp-server:8002
+      FAISS_INDEX_PATH: /app/knowledge_base/faiss_index
+      EMBEDDING_MODEL: sentence-transformers/all-MiniLM-L6-v2
+    depends_on:
+      - dummy-api
+      - mcp-server
+
+volumes:
+  mongodb_data:

@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+WORKDIR /app
+RUN pip install --no-cache-dir \
+    sentence-transformers \
+    faiss-cpu \
+    numpy
+COPY knowledge_base/ingest.py /app/ingest.py
+CMD ["python", "/app/ingest.py"]
