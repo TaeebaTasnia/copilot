@@ -1,19 +1,19 @@
-# 📚 NetAI Copilot Documentation Index
+# NetAI Copilot Documentation Index
 
-## 🎯 Where to Start
+##Where to Start
 
-### **For Quick Start (5 minutes)**
+### **For Quick Start **
 
-👉 **Read:** [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
+**Read:** [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
 
 - Ports and credentials
 - Start commands
 - API endpoints
 - Troubleshooting
 
-### **For Step-by-Step Testing (30 minutes)**
+### **For Step-by-Step Testing **
 
-👉 **Read:** [TESTING_GUIDE.md](TESTING_GUIDE.md)
+**Read:** [TESTING_GUIDE.md](TESTING_GUIDE.md)
 
 - Test MongoDB
 - Test API
@@ -22,7 +22,7 @@
 
 ### **To Understand What Changed**
 
-👉 **Read:** [CHANGES_SUMMARY.md](CHANGES_SUMMARY.md)
+ **Read:** [CHANGES_SUMMARY.md](CHANGES_SUMMARY.md)
 
 - What files were modified
 - Why changes were made
@@ -30,28 +30,28 @@
 
 ---
 
-## 📖 Complete Documentation Map
+##  Complete Documentation Map
 
 ```
-🗺️  DOCUMENTATION
+ DOCUMENTATION
     │
-    ├─ 📋 THIS FILE (start here for navigation)
+    ├─ THIS FILE (start here for navigation)
     │
-    ├─ 🎯 FOR QUICK START
-    │  └─ QUICK_REFERENCE.md         (5 min read)
+    ├─  FOR QUICK START
+    │  └─ QUICK_REFERENCE.md         
     │
-    ├─ 🧪 FOR TESTING
-    │  └─ TESTING_GUIDE.md           (30 min hands-on)
+    ├─  FOR TESTING
+    │  └─ TESTING_GUIDE.md          
     │
-    ├─ 💬 FOR SYSTEM OVERVIEW
-    │  ├─ CHAT_HISTORY_SETUP.md      (15 min read)
-    │  └─ SYSTEM_ARCHITECTURE.md     (20 min deep dive)
+    ├─  FOR SYSTEM OVERVIEW
+    │  ├─ CHAT_HISTORY_SETUP.md      
+    │  └─ SYSTEM_ARCHITECTURE.md     
     │
-    ├─ 📝 FOR CODE DETAILS
-    │  ├─ CODE_REFERENCE.md          (30 min code review)
-    │  └─ CHANGES_SUMMARY.md         (15 min change log)
+    ├─  FOR CODE DETAILS
+    │  ├─ CODE_REFERENCE.md          
+    │  └─ CHANGES_SUMMARY.md       
     │
-    └─ 📚 SOURCE CODE
+    └─  SOURCE CODE
        ├─ dummy-api/main.py          (Chat API)
        ├─ frontend/app.py            (Chat UI)
        ├─ scripts/init-mongo.js      (Database setup)
@@ -60,12 +60,12 @@
 
 ---
 
-## 📚 Documentation Files
+##  Documentation Files
 
-### **1. QUICK_REFERENCE.md** ⚡
+### **1. QUICK_REFERENCE.md** 
 
 **Read this if:** You just want to get started
-**Time:** 5 minutes
+**Time:** 5 minute
 **Contains:**
 
 - Start commands for all 3 services
@@ -76,15 +76,14 @@
 
 **Skip to section:**
 
-- 🚀 Start Everything
-- 🔍 Quick Tests
+- Start Everything
+-  Quick Tests
 
 ---
 
-### **2. TESTING_GUIDE.md** 🧪
+### **2. TESTING_GUIDE.md** 
 
 **Read this if:** You want to verify everything works
-**Time:** 30 minutes hands-on
 **Contains:**
 
 - Step-by-step service startup
@@ -103,10 +102,9 @@
 
 ---
 
-### **3. CHAT_HISTORY_SETUP.md** 💬
+### **3. CHAT_HISTORY_SETUP.md** 
 
 **Read this if:** You want to understand what the system does
-**Time:** 15 minutes
 **Contains:**
 
 - Architecture overview
@@ -119,16 +117,15 @@
 **Key sections:**
 
 - What Changed (executive summary)
-- 🏗️ Architecture
-- 📤 API Endpoints
-- 💡 Common Tasks
+- Architecture
+- API Endpoints
+- Common Tasks
 
 ---
 
-### **4. SYSTEM_ARCHITECTURE.md** 🏗️
+### **4. SYSTEM_ARCHITECTURE.md** 
 
 **Read this if:** You want deep technical understanding
-**Time:** 20 minutes
 **Contains:**
 
 - System diagram (text)
@@ -148,10 +145,9 @@
 
 ---
 
-### **5. CODE_REFERENCE.md** 📖
+### **5. CODE_REFERENCE.md** 
 
 **Read this if:** You want to understand the actual code
-**Time:** 30 minutes
 **Contains:**
 
 - File-by-file code changes
@@ -166,10 +162,9 @@
 
 ---
 
-### **6. CHANGES_SUMMARY.md** 📋
+### **6. CHANGES_SUMMARY.md** 
 
 **Read this if:** You want to know what changed and why
-**Time:** 15 minutes
 **Contains:**
 
 - Overview of why changes were made
@@ -184,55 +179,54 @@
 
 ---
 
-## 🎯 Reading Paths
+##  Reading Paths
 
-### Path 1: Get It Running (25 minutes)
-
-```
-QUICK_REFERENCE.md (5 min)
-    ↓
-TESTING_GUIDE.md (20 min, hands-on)
-    ↓
-✅ System is running and tested
-```
-
-### Path 2: Understand Everything (75 minutes)
+### Path 1: Get It Running 
 
 ```
-QUICK_REFERENCE.md (5 min)
+QUICK_REFERENCE.md 
     ↓
-CHANGES_SUMMARY.md (15 min)
+TESTING_GUIDE.md 
     ↓
-CHAT_HISTORY_SETUP.md (15 min)
-    ↓
-SYSTEM_ARCHITECTURE.md (20 min)
-    ↓
-CODE_REFERENCE.md (20 min)
-    ↓
-✅ Full mastery achieved
+ System is running and tested
 ```
 
-### Path 3: Deep Code Dive (45 minutes)
+### Path 2: Understand Everything
+```
+QUICK_REFERENCE.md 
+    ↓
+CHANGES_SUMMARY.md 
+    ↓
+CHAT_HISTORY_SETUP.md 
+    ↓
+SYSTEM_ARCHITECTURE.md
+    ↓
+CODE_REFERENCE.md 
+    ↓
+Full mastery achieved
+```
+
+### Path 3: Deep Code Dive 
 
 ```
-CODE_REFERENCE.md (30 min)
+CODE_REFERENCE.md 
     ↓
-SYSTEM_ARCHITECTURE.md (15 min)
+SYSTEM_ARCHITECTURE.md 
     ↓
-✅ Ready to modify code
+Ready to modify code
 ```
 
-### Path 4: Executive Summary (10 minutes)
+### Path 4: Executive Summary 
 
 ```
-CHANGES_SUMMARY.md (10 min)
+CHANGES_SUMMARY.md 
     ↓
-✅ Know what changed
+Know what changed
 ```
 
 ---
 
-## 📍 How to Access
+## How to Access
 
 ### From Terminal
 
@@ -260,7 +254,7 @@ Copy content into any markdown viewer:
 
 ---
 
-## 🎓 Key Concepts
+##  Key Concepts
 
 ### **Data Model**
 
@@ -284,7 +278,7 @@ See: [CODE_REFERENCE.md - File-by-File Changes](CODE_REFERENCE.md#-file-by-file-
 
 ---
 
-## 🚀 Services Overview
+##  Services Overview
 
 ### **Frontend (Streamlit)**
 
@@ -312,7 +306,7 @@ See: [CODE_REFERENCE.md - File-by-File Changes](CODE_REFERENCE.md#-file-by-file-
 
 ---
 
-## 📋 Critical URLs & Credentials
+##  Critical URLs & Credentials
 
 ### **Connection Strings**
 
@@ -332,7 +326,7 @@ DB Password:  password123
 
 ---
 
-## ✅ Verification Checklist
+##  Verification Checklist
 
 Before running, verify you have:
 
@@ -346,7 +340,7 @@ Before running, verify you have:
 
 ---
 
-## 🐛 Troubleshooting Guide
+##  Troubleshooting Guide
 
 | Issue                        | Solution                | Doc                |
 | ---------------------------- | ----------------------- | ------------------ |
@@ -358,7 +352,7 @@ Before running, verify you have:
 
 ---
 
-## 📞 Support Resources
+##  Support Resources
 
 ### **MongoDB Resources**
 
@@ -378,17 +372,17 @@ Before running, verify you have:
 
 ---
 
-## 🎯 File Locations
+## File Locations
 
 ```
 netai_copilot/
-├─ QUICK_REFERENCE.md          👈 Quick start (THIS IS YOUR BEST FRIEND)
-├─ TESTING_GUIDE.md            👈 Step-by-step testing
-├─ CHAT_HISTORY_SETUP.md        👈 System overview
-├─ SYSTEM_ARCHITECTURE.md       👈 Deep architecture
-├─ CODE_REFERENCE.md            👈 Code details
-├─ CHANGES_SUMMARY.md           👈 What changed
-├─ README.md                    👈 THIS FILE
+├─ QUICK_REFERENCE.md           Quick start (THIS IS YOUR BEST FRIEND)
+├─ TESTING_GUIDE.md             Step-by-step testing
+├─ CHAT_HISTORY_SETUP.md         System overview
+├─ SYSTEM_ARCHITECTURE.md        Deep architecture
+├─ CODE_REFERENCE.md             Code details
+├─ CHANGES_SUMMARY.md            What changed
+├─ README.md                     THIS FILE
 │
 ├─ frontend/
 │  ├─ app.py                    ← Chat UI (modified)
@@ -406,22 +400,9 @@ netai_copilot/
 
 ---
 
-## 🎓 Learning Objectives
 
-After reading all docs, you'll understand:
 
-1. ✅ How messages are saved to MongoDB
-2. ✅ How chat history is loaded on reload
-3. ✅ How the API communicates with the database
-4. ✅ How to query chat history in MongoDB
-5. ✅ How to troubleshoot connection issues
-6. ✅ How to extend the system with new features
-7. ✅ How to deploy to production
-8. ✅ How to scale horizontally
-
----
-
-## 🚀 Next Steps
+##  Next Steps
 
 ### **Step 1: Quick Read** (5 minutes)
 
@@ -445,7 +426,7 @@ Read: [CODE_REFERENCE.md](CODE_REFERENCE.md)
 
 ---
 
-## 💡 Pro Tips
+##  Pro Tips
 
 1. **Keep QUICK_REFERENCE.md handy** - Most common questions answered there
 2. **TESTING_GUIDE.md has exact commands** - Copy/paste into terminal
@@ -455,7 +436,7 @@ Read: [CODE_REFERENCE.md](CODE_REFERENCE.md)
 
 ---
 
-## ✨ Final Checklist
+##  Final Checklist
 
 - [ ] Read QUICK_REFERENCE.md
 - [ ] Start MongoDB
@@ -470,15 +451,15 @@ Read: [CODE_REFERENCE.md](CODE_REFERENCE.md)
 
 ---
 
-## 🎉 You're Ready!
+##  You're Ready!
 
 Your NetAI Copilot now has:
 
-- ✅ Complete chat history system
-- ✅ Message persistence
-- ✅ Database integration
-- ✅ Production-ready architecture
+-  Complete chat history system
+-  Message persistence
+-  Database integration
+-  Production-ready architecture
 
 **Start with:** [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
 
-**Questions?** Check the relevant doc first! 📖
+**Questions?** Check the relevant doc first! 
